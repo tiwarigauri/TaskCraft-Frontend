@@ -45,7 +45,7 @@ const LoginForm = ({ togglePanel }) => {
 
   return (
     <div className="">
-      <h1 className="text-lg font-bold text-center pb-8 textStyle">Login</h1>
+      <h1 className="text-lg font-bold text-center pb-8 textStyle">LOGIN</h1>
       <form className="space-y-3" onSubmit={handleSubmit}>
         <TextField
           fullWidth
@@ -88,7 +88,7 @@ const LoginForm = ({ togglePanel }) => {
       <div className="textStyle mt-5 flex items-center gap-2 py-5 justify-center">
         <span>Already have an account?</span>
         <Button className="" onClick={togglePanel} color="primary">
-          signup
+          SIGN UP
         </Button>
       </div>
     </div>

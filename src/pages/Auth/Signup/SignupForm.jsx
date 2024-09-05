@@ -59,7 +59,7 @@ const SignupForm = ({ togglePanel }) => {
 
   return (
     <div className="">
-      <h1 className="text-lg font-bold text-center pb-8 textStyle">Signup</h1>
+      <h1 className="text-lg font-bold text-center pb-8 textStyle">SIGN UP</h1>
       <form onSubmit={handleSubmit} className="space-y-3">
         <TextField
           fullWidth
@@ -126,14 +126,15 @@ const SignupForm = ({ togglePanel }) => {
         </div>
       </form>
 
-      <div className="textStyle flex items-center gap-2 mt-9 justify-center">
-        <span>have account ?</span>
-        <Button className="btn" onClick={togglePanel} color="primary">
-          signin
-        </Button>
-      </div>
+      <div className="textStyle flex flex-col items-center gap-2 mt-9 justify-center">
+  <span className="text-sm">Have an account?</span>
+  <Button className="btn mt-2" onClick={togglePanel} color="primary">
+    Sign In
+  </Button>
+</div>
     </div>
   );
 };
+
 
 export default SignupForm;
